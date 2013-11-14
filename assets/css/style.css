@@ -1,0 +1,180 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.float-right {
+    float: right;
+} 
+
+
+body {
+    margin: 0 auto;
+    line-height: 1.3em;
+    letter-spacing: normal;
+    background: #DDD;
+}
+
+.l-box {
+    padding: 1em;
+}
+
+.header {
+    margin: 0 0;
+    background: #000;
+}
+
+    .header div.pure-menu {
+        background: #000;
+    }
+
+    .header .pure-menu ul {
+        padding: 0.2em;
+        background: #000;
+        float: right;
+    }
+
+    .header .pure-menu a.pure-menu-heading {
+        color: #FFF;
+        float: left;
+        font-size: 1.2em;
+        padding-top: 7px;
+    }
+
+    .header .pure-menu a:link.pure-menu-heading { 
+        color: #666;
+        text-decoration:none;
+    }
+
+    .header .pure-menu a:visited.pure-menu-heading {
+        color: #666;
+        text-decoration:none;
+    }
+    .header .pure-menu a:hover.pure-menu-heading { 
+        color: #CC6600; 
+    }​
+
+    .header .pure-menu ul {
+        float: right;
+        display: block;
+    }
+
+    .header .pure-menu li {
+
+    }
+
+    .header .pure-menu ul li a:hover,
+    .header .pure-menu ul li a:focus {
+        background: #000;
+        border: none;
+        color: #CC6600;
+    }
+
+body .primary-button {
+    background: #CC6600;
+    color: #ccc;
+}
+
+body .pure-button-primary {
+    background: #CC6600;
+    color: #FFF;
+}
+
+.newItemButton {
+    background: #CC6600;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    display: block;
+    text-decoration: none;
+}
+
+a:hover.newItemButton {
+    color: #000;
+    background: #6cf;
+
+}
+
+.listPeople .viewVotesButton {
+    margin:20;
+}
+
+
+.footer {
+    background: #000;
+    color: #fff;
+    padding: 0.2em 1em;
+    font-size: 0.9em;
+    overflow: hidden
+}
+    .footer .pure-menu {
+            background: #000;
+            float: right;
+        }
+
+            .footer .pure-menu li a:link, .footer .pure-menu li a:visited {
+                background: #000;
+                border: none;
+                color: #000;
+            }
+
+            .footer .pure-menu li a:hover,
+            .footer .pure-menu li a:focus {
+                background: #000;
+                border: none;
+                color: #CC6600;
+            }
+
+#contentTemplate {
+    margin: 5em 2em 2em 2em;
+    border: none;
+    letter-spacing: normal;
+}
+
+.pure-table {
+    border: none;
+}
+
+.pure-table tr td {
+    font-size: 0.9em;
+}
+
+
+th.dataColumn {
+    text-align: left;
+}
+
+td.columnRight {
+    text-align: right;
+}
+
+.bottom-nav {
+    text-align: right;
+}
+
+a#copyr {
+    display: block;
+    padding-top: 7px;
+}
+
+a:link#copyr { 
+    color: #666;
+    text-decoration:none;
+}
+a:visited#copyr {
+    color: #666;
+    text-decoration:none;
+}
+a:hover#copyr { 
+    color: #CC6600; 
+}​
+
+div.newItemTableBottom {
+    text-align: center;
+}
+
+.errorText {
+    color: #A11;
+}

@@ -1,0 +1,19 @@
+
+{{ define "content" }}
+<div class="listPeople">
+	<div class="pure-g-r">
+	{{ range .People }}
+		<div class="pure-u-1-5">
+			<p>{{ .Name }}: {{ .Id }}</p>
+			<img src="/assets/images/{{ .ImageFile }}"/>
+			<form role="form" accept-charset="UTF-8" action="/Person/update/vote" method="post">
+				<input type="hidden" name="Votee" value={{ .Id }} />
+				<input type="submit" name="VoteType" class="pure-button" value="1"/>
+				<input type="submit" name="VoteType" class="pure-button" value="2"/>
+				<input type="submit" name="VoteType" class="pure-button" value="3"/>
+			</form>
+		</div>
+	{{ end }}
+	</div>
+</div>
+{{ end }}

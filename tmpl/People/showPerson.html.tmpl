@@ -1,0 +1,12 @@
+{{ define "content" }}
+	<div>
+		<div>
+			{{ .GetSessionValues.Name }}'s Votes:
+		</div>
+		{{ range .Person.Votes }}
+			<p>ID: {{ .Id }}; Voter: {{ .Voter }}; Votee: {{ .Votee }}; VoteType: {{ .VoteType }}; VoteeName: {{ .VoteeName }}; ImageFile: {{ .ImageFile }}</p>
+			<p><img src="/assets/images/{{ .ImageFile }}" height="120" width="120"/></p>
+		{{ end }}
+
+	</div>
+{{ end }}

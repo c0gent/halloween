@@ -1,0 +1,21 @@
+{{ define "content" }}
+	{{ if .LoginFailure }}
+		<div id="errorExplanaation">
+			<h1 class='errorText'>Important Information</h1>
+			<h2>The following important items prohibited this login from happening: </h2>
+			<ul>
+				<li>You suck at typing and/or remembering</li>
+				<li>You might be a moron</li>
+				<li>Do it better next time</li>
+			</ul>
+		</div>
+	{{ end }}
+	<form class = "pure-form" role="form" accept-charset="UTF-8" action="/Session/create" method="post">
+		<fieldset class="pure-group">
+			<input name="Name" type="text" class="pure-input-1-2" placeholder="Name:">
+			<input Name="Code" type="number" class="pure-input-1-2" placeholder="Code:">
+		</fieldset>
+		<a href="/" class="pure-button pure-input">Cancel</a>
+		<input type="submit" class="pure-button pure-input pure-button-primary" value="Login" />
+	</form>
+{{ end }}
